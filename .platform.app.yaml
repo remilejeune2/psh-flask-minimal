@@ -18,7 +18,6 @@ variables:
 hooks:
     build: |
         set -e
-        export FLASK_APP=server.py
         python -m pip install pip
         pip install -r requirements.txt
 
@@ -26,4 +25,4 @@ hooks:
 web:
     # Commands are run once after deployment to start the application process.
     commands:
-        start: flask run -p $PORT
+        start: FLASK_APP=server.py flask run -p $PORT
