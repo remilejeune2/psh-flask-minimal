@@ -5,8 +5,6 @@ import sys
 import flask
 import flask.json
 import gevent.pywsgi
-import pymysql
-import redis
 
 from platformshconfig import Config
 

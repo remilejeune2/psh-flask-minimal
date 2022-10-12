@@ -35,4 +35,4 @@ hooks:
 web:
     # Commands are run once after deployment to start the application process.
     commands:
-        start: blackfire-python flask run -p $PORT
+        start: flask run -p $PORT
